@@ -151,4 +151,7 @@ mmaction/tools/*
 mmaction/.mim
 
 #Outputs
-/browse_out/*
+/browse_out/
+browse_out/
+browse_out/*
+.mp4

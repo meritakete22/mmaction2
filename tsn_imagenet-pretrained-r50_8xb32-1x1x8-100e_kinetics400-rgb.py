@@ -6,7 +6,7 @@ data_root_val = 'data/kinetics400/videos_val'
 dataset_type = 'VideoDataset'
 default_hooks = dict(
     checkpoint=dict(
-        interval=3, max_keep_ckpts=3, save_best='auto', type='CheckpointHook'),
+        interval=1, max_keep_ckpts=1, save_best='auto', type='CheckpointHook'),
     logger=dict(ignore_last=False, interval=20, type='LoggerHook'),
     param_scheduler=dict(type='ParamSchedulerHook'),
     runtime_info=dict(type='RuntimeInfoHook'),
@@ -19,7 +19,7 @@ env_cfg = dict(
     dist_cfg=dict(backend='nccl'),
     mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))
 file_client_args = dict(io_backend='disk')
-load_from = None
+load_from = 'https://download.openmmlab.com/mmaction/v1.0/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb_20220906-cd10898e.pth'
 log_level = 'INFO'
 log_processor = dict(by_epoch=True, type='LogProcessor', window_size=20)
 model = dict(
@@ -34,7 +34,7 @@ model = dict(
         dropout_ratio=0.4,
         in_channels=2048,
         init_std=0.01,
-        num_classes=400,
+        num_classes=2,
         spatial_type='avg',
         type='TSNHead'),
     data_preprocessor=dict(
@@ -60,11 +60,11 @@ param_scheduler = [
     dict(
         begin=0,
         by_epoch=True,
-        end=100,
+        end=10,
         gamma=0.1,
         milestones=[
-            40,
-            80,
+            4,
+            8,
         ],
         type='MultiStepLR'),
 ]
@@ -73,8 +73,8 @@ test_cfg = dict(type='TestLoop')
 test_dataloader = dict(
     batch_size=1,
     dataset=dict(
-        ann_file='data/kinetics400/kinetics400_val_list_videos.txt',
-        data_prefix=dict(video='data/kinetics400/videos_val'),
+        ann_file='data/kinetics400_tiny/kinetics_tiny_val_video.txt',
+        data_prefix=dict(video='data/kinetics400_tiny/val'),
         pipeline=[
             dict(io_backend='disk', type='DecordInit'),
             dict(
@@ -116,7 +116,7 @@ test_pipeline = [
     dict(type='PackActionInputs'),
 ]
 train_cfg = dict(
-    max_epochs=100, type='EpochBasedTrainLoop', val_begin=1, val_interval=1)
+    max_epochs=10, type='EpochBasedTrainLoop', val_begin=1, val_interval=1)
 train_dataloader = dict(
     batch_size=32,
     dataset=dict(
