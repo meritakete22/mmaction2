@@ -12,16 +12,15 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument(
         '--data-root',
-        default='data/multisports',
+        default='data/multisports/',
         help='the directory to multisports annotations')
     parser.add_argument(
         '--out-root',
-        default='data/multisports',
+        default='data/multisports/',
         help='output directory of output annotation files')
     parser.add_argument('--dump-proposals', action='store_true')
     args = parser.parse_args()
     return args
-
 
 def parse_anno(args):
     if not osp.exists(args.out_root):
@@ -46,7 +45,7 @@ def parse_anno(args):
     # convert proposal bboxes
     if args.dump_proposals:
         proposals_path = osp.join(args.data_root,
-                                  'annotations/MultiSports_box')
+                                  'MultiSports_box')
         for proposals in os.listdir(proposals_path):
             proposal_info = load(osp.join(proposals_path, proposals))
             proposal_out = dict()
