@@ -2,9 +2,7 @@ _base_ = [
     '../slowonly/slowonly_kinetics400-pretrained-r50_8xb16-4x16x1-8e_multisports-rgb.py'  # noqa: E501
 ]
 
-url = ('https://download.openmmlab.com/mmaction/recognition/slowfast/'
-       'slowfast_r50_4x16x1_256e_kinetics400_rgb/'
-       'slowfast_r50_4x16x1_256e_kinetics400_rgb_20200704-bcde7ed7.pth')
+url = ('https://download.openmmlab.com/mmaction/recognition/slowfast/slowfast_r50_4x16x1_256e_kinetics400_rgb/slowfast_r50_4x16x1_256e_kinetics400_rgb_20200704-bcde7ed7.pth')
 num_classes = 66
 model = dict(
     init_cfg=dict(type='Pretrained', checkpoint=url),
@@ -38,7 +36,7 @@ model = dict(
             spatial_strides=(1, 2, 2, 1))),
     roi_head=dict(bbox_head=dict(in_channels=2304)))
 
-dataset_type = 'AVADataset'
+dataset_type = 'MultiSportsDataset'
 data_root = 'data/multisports/trainval'
 anno_root = 'data/multisports/annotations'
 

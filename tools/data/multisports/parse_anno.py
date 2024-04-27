@@ -2,6 +2,8 @@
 import csv
 import os
 import os.path as osp
+import pickle
+
 from argparse import ArgumentParser
 
 import numpy as np
@@ -12,11 +14,11 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument(
         '--data-root',
-        default='data/multisports/',
+        default='/home/luis/Documentos/GitHub/mmaction2/data/multisports/',
         help='the directory to multisports annotations')
     parser.add_argument(
         '--out-root',
-        default='data/multisports/',
+        default='/home/luis/Documentos/GitHub/mmaction2/data/multisports/',
         help='output directory of output annotation files')
     parser.add_argument('--dump-proposals', action='store_true')
     args = parser.parse_args()
@@ -47,7 +49,8 @@ def parse_anno(args):
         proposals_path = osp.join(args.data_root,
                                   'MultiSports_box')
         for proposals in os.listdir(proposals_path):
-            proposal_info = load(osp.join(proposals_path, proposals))
+            #proposal_info = load(osp.join(proposals_path, proposals))
+            proposal_info = pickle.load(open(osp.join(proposals_path, proposals), 'rb'))
             proposal_out = dict()
             for key in proposal_info.keys():
                 key_split = key.split(',')
