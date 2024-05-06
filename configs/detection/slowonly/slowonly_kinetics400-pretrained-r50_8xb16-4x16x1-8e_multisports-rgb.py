@@ -9,7 +9,7 @@ num_classes = 66
 model = dict(
     type='FastRCNN',
     _scope_='mmdet',
-    init_cfg=dict(type='Pretrained', checkpoint=url),
+    init_cfg=dict(type='Pretrained', checkpoint='/home/luis/Documentos/GitHub/mmaction2/slowonly_kinetics400-pretrained-r50_8xb16-4x16x1-8e_multisports-rgb_20230320-a1ca5e76.pth'),
     backbone=dict(
         type='mmaction.ResNet3dSlowOnly',
         depth=50,

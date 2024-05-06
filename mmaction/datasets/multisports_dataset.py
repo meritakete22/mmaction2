@@ -10,7 +10,7 @@ import numpy as np
 import logging
 
 from mmaction.evaluation import ava_eval, read_labelmap, results2csv
-from mmdet.utils.logger import get_root_logger
+# from mmdet.utils.logger import get_root_logger
 from .base import BaseDataset
 from mmaction.registry import DATASETS
 
@@ -131,7 +131,7 @@ class MultiSportsDataset(BaseDataset):
         self.filename_tmpl = filename_tmpl
         self.num_max_proposals = num_max_proposals
         self.timestamp_start = timestamp_start
-        self.logger = get_root_logger()
+        # self.logger = get_root_logger()
         super().__init__(
             ann_file,
             pipeline,

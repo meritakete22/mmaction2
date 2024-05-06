@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import copy
 import os.path as osp
 from pathlib import Path
 from typing import List, Optional, Tuple, Union
@@ -73,11 +74,23 @@ def inference_recognizer(model: nn.Module,
         predicted scores are saved at ``result.pred_score``.
     """
 
+    # if test_pipeline is None:
+    #     cfg = model.cfg
+    #     init_default_scope(cfg.get('default_scope', 'mmaction'))
+    #     test_pipeline_cfg = cfg.test_pipeline
+    #     test_pipeline = Compose(test_pipeline_cfg)
+
+    cfg = model.cfg
+    if isinstance(cfg.test_dataloader, list): 
+        cfg = copy.deepcopy(cfg.test_dataloader[0].dataset) 
+    else: 
+        cfg = copy.deepcopy(cfg.test_dataloader.dataset)
+
     if test_pipeline is None:
-        cfg = model.cfg
         init_default_scope(cfg.get('default_scope', 'mmaction'))
-        test_pipeline_cfg = cfg.test_pipeline
+        test_pipeline_cfg = cfg.pipeline
         test_pipeline = Compose(test_pipeline_cfg)
+
 
     input_flag = None
     if isinstance(video, dict):
@@ -102,6 +115,9 @@ def inference_recognizer(model: nn.Module,
             start_index=0,
             label=-1)
 
+    print(data)
+    input('d')
+    
     data = test_pipeline(data)
     data = pseudo_collate([data])
 

@@ -5,7 +5,7 @@ _base_ = [
 url = ('https://download.openmmlab.com/mmaction/recognition/slowfast/slowfast_r50_4x16x1_256e_kinetics400_rgb/slowfast_r50_4x16x1_256e_kinetics400_rgb_20200704-bcde7ed7.pth')
 num_classes = 66
 model = dict(
-    init_cfg=dict(type='Pretrained', checkpoint=url),
+    init_cfg=dict(type='Pretrained', checkpoint='/home/luis/Documentos/GitHub/mmaction2/slowfast_kinetics400-pretrained-r50_8xb16-4x16x1-8e_multisports-rgb_20230320-af666368.pth'),
     backbone=dict(
         _delete_=True,
         type='mmaction.ResNet3dSlowFast',
@@ -36,7 +36,7 @@ model = dict(
             spatial_strides=(1, 2, 2, 1))),
     roi_head=dict(bbox_head=dict(in_channels=2304)))
 
-dataset_type = 'MultiSportsDataset'
+dataset_type = 'AVADataset'
 data_root = 'data/multisports/trainval'
 anno_root = 'data/multisports/annotations'
 

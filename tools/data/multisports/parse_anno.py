@@ -48,6 +48,8 @@ def parse_anno(args):
     if args.dump_proposals:
         proposals_path = osp.join(args.data_root,
                                   'MultiSports_box')
+        print(proposals_path)
+        input('p')
         for proposals in os.listdir(proposals_path):
             #proposal_info = load(osp.join(proposals_path, proposals))
             proposal_info = pickle.load(open(osp.join(proposals_path, proposals), 'rb'))

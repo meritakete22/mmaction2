@@ -5,7 +5,7 @@ import csv
 # Rutas de los ficheros
 csv_file = '/home/luis/Documentos/GitHub/mmaction2/data/multisports/annotations/multisports_val.csv'
 config_file = '/home/luis/Documentos/GitHub/mmaction2/configs/detection/slowfast/slowfast_kinetics400-pretrained-r50_8xb16-4x16x1-8e_multisports-rgb.py'
-checkpoint_file = '/home/luis/Documentos/GitHub/mmaction2/slowfast_r50_4x16x1_256e_kinetics400_rgb_20200704-bcde7ed7.pth'
+checkpoint_file = '/home/luis/Documentos/GitHub/mmaction2/slowfast_kinetics400-pretrained-r50_8xb16-4x16x1-8e_multisports-rgb_20230320-af666368.pth'
 
 # Configurar el modelo
 model = init_recognizer(config_file, checkpoint_file, device='cuda:0')
@@ -23,9 +23,9 @@ with open(csv_file, newline='') as archivo:
         datos.append(fila)
 
 video_file = datos[0][0]
-
+print(video_file)
 # Realizar inferencia en el video
-result = inference_recognizer(model, video_file)
+result = inference_recognizer(model, str(video_file))
 
 # Obtener la etiqueta de la clase predicha
 label = result.argmax()

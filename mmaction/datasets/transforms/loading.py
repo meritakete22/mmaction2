@@ -750,6 +750,9 @@ class SampleAVAFrames(SampleFrames):
             results (dict): The resulting dict to be modified and passed
                 to the next transform in pipeline.
         """
+        print('results:', results)
+        input('')
+
         fps = results['fps']
         timestamp = results['timestamp']
         timestamp_start = results['timestamp_start']
