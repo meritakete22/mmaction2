@@ -11,7 +11,7 @@ import logging
 
 from mmaction.evaluation import ava_eval, read_labelmap, results2csv
 # from mmdet.utils.logger import get_root_logger
-from .base import BaseDataset
+from mmaction.datasets.base import BaseDataset
 from mmaction.registry import DATASETS
 
 def print_log(msg, logger=None, level=logging.INFO):

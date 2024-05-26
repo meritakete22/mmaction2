@@ -149,3 +149,9 @@ param_scheduler = [
 optim_wrapper = dict(
     optimizer=dict(type='SGD', lr=0.2, momentum=0.9, weight_decay=0.00001),
     clip_grad=dict(max_norm=5, norm_type=2))
+
+#Para visualizar 
+default_hooks = dict(
+    visualization=dict(type='VisualizationHook')
+)
+
