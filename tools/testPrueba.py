@@ -4,9 +4,11 @@ import os
 import os.path as osp
 import pickle
 import pandas as pd
+import csv
 
 from mmengine.config import Config, DictAction
 from mmengine.runner import Runner
+import torch
 
 from mmaction.registry import RUNNERS
 
@@ -149,6 +151,11 @@ def main():
         results = runner.test()
         all_results.extend(results)
 
+        # Liberar memoria explícitamente
+        del runner
+        del results
+        torch.cuda.empty_cache()
+        
     # Save all results combined
     combined_results_file = osp.join(cfg.work_dir, 'combined_results.pkl')
     with open(combined_results_file, 'wb') as f:

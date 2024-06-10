@@ -61,7 +61,7 @@ data_root = 'data/multisports/trainval'
 anno_root = 'data/multisports/annotations'
 
 ann_file_train = f'{anno_root}/multisports_train.csv'
-ann_file_val = f'{anno_root}/multisports_val.csv'
+ann_file_val = f'{anno_root}/multisports_val_fixed.csv'
 gt_file = f'{anno_root}/multisports_GT.pkl'
 
 proposal_file_train = f'{anno_root}/multisports_dense_proposals_train.recall_96.13.pkl'  # noqa: E501

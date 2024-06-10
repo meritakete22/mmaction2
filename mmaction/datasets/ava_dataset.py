@@ -10,7 +10,7 @@ from mmengine.logging import MMLogger
 from mmaction.evaluation import read_labelmap
 from mmaction.registry import DATASETS
 from mmaction.utils import ConfigType
-from .base import BaseActionDataset
+from mmaction.datasets.base  import BaseActionDataset
 
 
 @DATASETS.register_module()
@@ -331,7 +331,6 @@ class AVADataset(BaseActionDataset):
         data_info['entity_ids'] = ann['entity_ids']
 
         return data_info
-
 
 @DATASETS.register_module()
 class AVAKineticsDataset(BaseActionDataset):

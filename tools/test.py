@@ -54,6 +54,7 @@ def parse_args():
         default='none',
         help='job launcher')
     parser.add_argument('--local_rank', '--local-rank', type=int, default=0)
+    parser.add_argument('--ann-file-val', help='File with the csv of validation')
     args = parser.parse_args()
     if 'LOCAL_RANK' not in os.environ:
         os.environ['LOCAL_RANK'] = str(args.local_rank)
@@ -106,9 +107,16 @@ def main():
         # use config filename as default work_dir if cfg.work_dir is None
         cfg.work_dir = osp.join('./work_dirs',
                                 osp.splitext(osp.basename(args.config))[0])
+        
+    # Update the ann_file_val in cfg
+    if args.ann_file_val is not None:
+        input('joined')
+        cfg.ann_file_val= args.ann_file_val
+        cfg.val_dataloader.dataset.ann_file = args.ann_file_val
+        cfg.test_dataloader.dataset.ann_file = args.ann_file_val
 
     cfg.load_from = args.checkpoint
-
+    
     # build the runner from config
     if 'runner_type' not in cfg:
         # build the default runner
