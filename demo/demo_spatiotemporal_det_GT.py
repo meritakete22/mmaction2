@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 import copy as cp
+import pickle
 import tempfile
 
 import cv2
@@ -45,8 +46,62 @@ plate_red = 'c30010-d1001f-de0a26-f01e2c-ff2c2c-f9449'
 plate_red = plate_red.split('-')
 plate_red = [hex2color(h) for h in plate_red]
 
+def iou(boxA, boxB):
+    # Determine the (x, y)-coordinates of the intersection rectangle
+    xA = max(boxA[0], boxB[0])
+    yA = max(boxA[1], boxB[1])
+    xB = min(boxA[2], boxB[2])
+    yB = min(boxA[3], boxB[3])
 
-def visualize(frames, annotations, plate=plate_blue, max_num=5):
+    # Compute the area of intersection rectangle
+    interArea = max(0, xB - xA + 1) * max(0, yB - yA + 1)
+
+    # Compute the area of both the prediction and ground-truth rectangles
+    boxAArea = (boxA[2] - boxA[0] + 1) * (boxA[3] - boxA[1] + 1)
+    boxBArea = (boxB[2] - boxB[0] + 1) * (boxB[3] - boxB[1] + 1)
+
+    iou = interArea / float(boxAArea + boxBArea - interArea)
+
+    # Return the intersection over union value
+    return iou
+
+def compare_predictions_with_gt(pred_box, pred_labels, gt_tubes, gt_labels, frame_number):
+    # print("Frame: ", frame_number)
+    # print("Pred labels: ", pred_labels)
+    # print("Pred box: ", pred_box)
+
+    # labels_gt = []
+    # for label, tubes in gt_tubes.items():
+    #     labels_gt.append(gt_labels[label])
+    # print("Labels gt: ", labels_gt)
+
+    #Almacenar las cajas de GT
+    gt_boxes = []
+    for label, tubes in gt_tubes.items():
+        for tube in tubes:
+            for frame_info in tube:
+                if frame_info[0] == frame_number:
+                    gt_box = frame_info[1:]
+                    gt_boxes.append((gt_labels[label], gt_box))
+
+    # print("GT boxes: ", gt_boxes)
+    # input("")
+    
+    # Verificar si alguna caja GT coincide con la predicción
+    for gt_label, gt_box in gt_boxes:
+        iou_score = iou(pred_box, gt_box)
+        # print("IOU: ", iou_score)
+        if iou_score >= 0.3:
+            # print("Predicción: ", pred_labels)
+            # print("GT: ", gt_label)
+            # input("")
+            if gt_label in pred_labels:
+                print("Correcto")
+                return True
+    
+    return False
+
+def visualize(frames, annotations, gt_tubes, gt_labels ,plate=plate_blue, max_num=5):
     """Visualize frames with predicted annotations.
 
     Args:
@@ -61,7 +116,6 @@ def visualize(frames, annotations, plate=plate_blue, max_num=5):
     """
 
     assert max_num + 1 <= len(plate)
-    plate = [x[::-1] for x in plate]
     frames_out = cp.deepcopy(frames)
     nf, na = len(frames), len(annotations)
     assert nf % na == 0
@@ -69,6 +123,7 @@ def visualize(frames, annotations, plate=plate_blue, max_num=5):
     anno = None
     h, w, _ = frames[0].shape
     scale_ratio = np.array([w, h, w, h])
+
     for i in range(na):
         anno = annotations[i]
         if anno is None:
@@ -76,15 +131,22 @@ def visualize(frames, annotations, plate=plate_blue, max_num=5):
         for j in range(nfpa):
             ind = i * nfpa + j
             frame = frames_out[ind]
+            frame_number = ind
             for ann in anno:
                 box = ann[0]
-                label = ann[1]
+                label = [lb.replace('_', ' ') for lb in ann[1]]
                 if not len(label):
                     continue
                 score = ann[2]
                 box = (box * scale_ratio).astype(np.int64)
-                st, ed = tuple(box[:2]), tuple(box[2:])
+                st, ed = tuple(box[:2]), tuple(box[2:])             
+                # Comparar con las anotaciones GT
+                correct = compare_predictions_with_gt(box, label, gt_tubes, gt_labels, frame_number)
+                plate = plate_green if correct else plate_red
+                plate = [x[::-1] for x in plate]
+
                 cv2.rectangle(frame, st, ed, plate[0], 2)
+
                 for k, lb in enumerate(label):
                     if k >= max_num:
                         break
@@ -102,6 +164,12 @@ def visualize(frames, annotations, plate=plate_blue, max_num=5):
 
     return frames_out
 
+
+def load_gt_ann(file_path):
+    """Load ground truth annotations from a pickle file."""
+    with open(file_path, 'rb') as f:
+        gt_annotations = pickle.load(f)
+    return gt_annotations
 
 def load_label_map(file_path):
     """Load Label Map.
@@ -149,7 +217,6 @@ def pack_result(human_detection, result, img_h, img_w):
             (prop.data.cpu().numpy(), [x[0] for x in res], [x[1]
                                                             for x in res]))
     return results
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description='MMAction2 demo')
@@ -250,13 +317,29 @@ def main():
     config = mmengine.Config.fromfile(args.config)
     config.merge_from_dict(args.cfg_options)
     val_pipeline = config.val_pipeline
+    gt_anno = load_gt_ann(config.gt_file)
 
+    # Sacar el id del video
+    video_path_parts = args.video.split('/')
+    sport = video_path_parts[-2]  # Obtiene el nombre del deporte
+    video_name = video_path_parts[-1].split('.')[0]  # Obtiene el nombre del video sin la extensión
+
+    # Formato deseado: "deporte/nombre_del_video"
+    video_id = f"{sport}/{video_name}"
+    # print(gt_anno.keys())
+    # print(gt_anno['gttubes'][video_id])
+    # input("")
+    gt = gt_anno['gttubes'][video_id]
+    gt_labels = gt_anno['labels']        
+
+    # Get the sampler
     sampler = [
         x for x in val_pipeline if get_str_type(x['type']) == 'SampleAVAFrames'
     ][0]
     clip_len, frame_interval = sampler['clip_len'], sampler['frame_interval']
     window_size = clip_len * frame_interval
     assert clip_len % 2 == 0, 'We would like to have an even clip_len'
+    
     # Note that it's 1 based here
     timestamps = np.arange(window_size // 2, num_frame + 1 - window_size // 2,
                            args.predict_stepsize)
@@ -313,6 +396,7 @@ def main():
     print('Performing SpatioTemporal Action Detection for each clip')
     assert len(timestamps) == len(human_detections)
     prog_bar = mmengine.ProgressBar(len(timestamps))
+
     for timestamp, proposal in zip(timestamps, human_detections):
         if proposal.shape[0] == 0:
             predictions.append(None)
@@ -366,7 +450,7 @@ def main():
         for i in dense_timestamps(timestamps, dense_n)
     ]
     print('Performing visualization')
-    vis_frames = visualize(frames, results)
+    vis_frames = visualize(frames, results, gt, gt_labels)
     vid = mpy.ImageSequenceClip([x[:, :, ::-1] for x in vis_frames],
                                 fps=args.output_fps)
     vid.write_videofile(args.out_filename)

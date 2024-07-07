@@ -110,7 +110,6 @@ def main():
         
     # Update the ann_file_val in cfg
     if args.ann_file_val is not None:
-        input('joined')
         cfg.ann_file_val= args.ann_file_val
         cfg.val_dataloader.dataset.ann_file = args.ann_file_val
         cfg.test_dataloader.dataset.ann_file = args.ann_file_val

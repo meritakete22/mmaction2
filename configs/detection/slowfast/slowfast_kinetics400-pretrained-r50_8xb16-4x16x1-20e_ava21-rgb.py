@@ -74,13 +74,13 @@ dataset_type = 'AVADataset'
 data_root = 'data/ava/rawframes'
 anno_root = 'data/ava/annotations'
 
-ann_file_train = f'{anno_root}/ava_train_v2.1.csv'
-ann_file_val = f'{anno_root}/ava_val_v2.1.csv'
+ann_file_train = f'{anno_root}/ava_train_v2.2.csv'
+ann_file_val = f'{anno_root}/ava_val_v2.2.csv'
 
-exclude_file_train = f'{anno_root}/ava_train_excluded_timestamps_v2.1.csv'
-exclude_file_val = f'{anno_root}/ava_val_excluded_timestamps_v2.1.csv'
+exclude_file_train = f'{anno_root}/ava_train_excluded_timestamps_v2.2.csv'
+exclude_file_val = f'{anno_root}/ava_val_excluded_timestamps_v2.2.csv'
 
-label_file = f'{anno_root}/ava_action_list_v2.1_for_activitynet_2018.pbtxt'
+label_file = f'{anno_root}/ava_action_list_v2.2_for_activitynet_2019.pbtxt'
 
 proposal_file_train = (f'{anno_root}/ava_dense_proposals_train.FAIR.'
                        'recall_93.9.pkl')

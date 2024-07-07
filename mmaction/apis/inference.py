@@ -74,22 +74,22 @@ def inference_recognizer(model: nn.Module,
         predicted scores are saved at ``result.pred_score``.
     """
 
-    # if test_pipeline is None:
-    #     cfg = model.cfg
-    #     init_default_scope(cfg.get('default_scope', 'mmaction'))
-    #     test_pipeline_cfg = cfg.test_pipeline
-    #     test_pipeline = Compose(test_pipeline_cfg)
-
-    cfg = model.cfg
-    if isinstance(cfg.test_dataloader, list): 
-        cfg = copy.deepcopy(cfg.test_dataloader[0].dataset) 
-    else: 
-        cfg = copy.deepcopy(cfg.test_dataloader.dataset)
-
     if test_pipeline is None:
+        cfg = model.cfg
         init_default_scope(cfg.get('default_scope', 'mmaction'))
-        test_pipeline_cfg = cfg.pipeline
+        test_pipeline_cfg = cfg.test_pipeline
         test_pipeline = Compose(test_pipeline_cfg)
+
+    # cfg = model.cfg
+    # if isinstance(cfg.test_dataloader, list): 
+    #     cfg = copy.deepcopy(cfg.test_dataloader[0].dataset) 
+    # else: 
+    #     cfg = copy.deepcopy(cfg.test_dataloader.dataset)
+
+    # if test_pipeline is None:
+    #     init_default_scope(cfg.get('default_scope', 'mmaction'))
+    #     test_pipeline_cfg = cfg.pipeline
+    #     test_pipeline = Compose(test_pipeline_cfg)
 
 
     input_flag = None

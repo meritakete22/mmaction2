@@ -1,0 +1,939 @@
+Downloading finished.
+--2024-07-03 12:56:32--  https://s3.amazonaws.com/ava-dataset/test/--205wugM18.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.250.166, 52.216.97.109, 52.217.69.14, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.250.166]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:33--  https://s3.amazonaws.com/ava-dataset/test/-APF0-L14kw.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.69.14, 16.182.109.216, 16.182.41.56, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.69.14]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:34--  https://s3.amazonaws.com/ava-dataset/test/-FLn0aeA6EU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.175.56, 54.231.232.136, 52.216.37.224, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.175.56]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:34--  https://s3.amazonaws.com/ava-dataset/test/0OLtK6SeTwo.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.37.224, 52.217.117.144, 54.231.232.136, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.37.224]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:35 ERROR 404: Not Found.
+
+--2024-07-03 12:56:35--  https://s3.amazonaws.com/ava-dataset/test/1R7n8B8KkZE.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.175.56, 54.231.165.104, 52.217.122.72, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.175.56]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:35--  https://s3.amazonaws.com/ava-dataset/test/1XZZnWMP4CU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.37.224, 52.216.244.102, 52.217.117.144, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.37.224]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:36--  https://s3.amazonaws.com/ava-dataset/test/2eTGj8zPykM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.39.32, 52.216.37.224, 54.231.232.136, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.39.32]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:36--  https://s3.amazonaws.com/ava-dataset/test/3-ivkPTSTSw.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.117.144, 52.216.37.224, 52.217.175.56, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.117.144]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:37 ERROR 404: Not Found.
+
+--2024-07-03 12:56:37--  https://s3.amazonaws.com/ava-dataset/test/30Qkf0pq-PY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.39.32, 52.216.37.224, 54.231.165.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.39.32]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:37--  https://s3.amazonaws.com/ava-dataset/test/55R6Ng9w65o.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.175.56, 54.231.232.136, 52.216.37.224, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.175.56]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:38--  https://s3.amazonaws.com/ava-dataset/test/6IebItD0ETQ.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.232.136, 52.216.244.102, 52.216.37.224, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.232.136]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:38--  https://s3.amazonaws.com/ava-dataset/test/72MzYjWz_7g.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.232.136, 52.217.117.144, 52.216.37.224, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.232.136]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:39--  https://s3.amazonaws.com/ava-dataset/test/7QstV153hbA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.228.160, 52.217.1.46, 52.217.134.232, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.228.160]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:39--  https://s3.amazonaws.com/ava-dataset/test/7SGCpWCNN84.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.70.38, 52.217.235.112, 52.216.219.160, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.70.38]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:40 ERROR 404: Not Found.
+
+--2024-07-03 12:56:40--  https://s3.amazonaws.com/ava-dataset/test/7oY-kE-goOA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.70.38, 52.216.219.160, 52.216.61.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.70.38]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:40--  https://s3.amazonaws.com/ava-dataset/test/8FYx0LtfPTE.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.178.237, 52.217.70.38, 52.217.134.232, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.178.237]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:41--  https://s3.amazonaws.com/ava-dataset/test/8oL0i5WorkE.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.178.237, 54.231.228.160, 52.217.134.232, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.178.237]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:41 ERROR 404: Not Found.
+
+--2024-07-03 12:56:41--  https://s3.amazonaws.com/ava-dataset/test/9f8r96-it6c.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.219.160, 52.217.70.38, 52.217.235.112, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.219.160]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:42--  https://s3.amazonaws.com/ava-dataset/test/A8SUe2Yqn60.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.178.237, 52.216.219.160, 52.216.61.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.178.237]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:42--  https://s3.amazonaws.com/ava-dataset/test/A9WSiEDeu0I.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.178.237, 54.231.228.160, 52.217.70.38, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.178.237]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:43--  https://s3.amazonaws.com/ava-dataset/test/AwlY-zteegM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.235.112, 54.231.228.160, 52.216.178.237, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.235.112]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:43--  https://s3.amazonaws.com/ava-dataset/test/BD3zaLKhkV4.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.178.237, 52.217.1.46, 52.217.70.38, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.178.237]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:44--  https://s3.amazonaws.com/ava-dataset/test/BLDTynQwGRI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.100.246, 3.5.12.182, 52.217.0.158, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.100.246]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:44--  https://s3.amazonaws.com/ava-dataset/test/BU98nWUtT5E.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.100.246, 3.5.12.182, 52.216.218.168, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.100.246]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:45--  https://s3.amazonaws.com/ava-dataset/test/BV1VreCWZ64.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.179.13, 52.217.0.158, 52.217.100.246, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.179.13]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:45--  https://s3.amazonaws.com/ava-dataset/test/BnIFkfDhJ2w.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.100.246, 52.216.179.13, 52.216.218.168, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.100.246]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:46--  https://s3.amazonaws.com/ava-dataset/test/DaUzhc9_6io.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.100.246, 3.5.12.182, 52.217.0.158, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.100.246]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:46 ERROR 404: Not Found.
+
+--2024-07-03 12:56:46--  https://s3.amazonaws.com/ava-dataset/test/E-6ruyZFfZs.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.100.246, 52.217.0.158, 52.216.218.168, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.100.246]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:47--  https://s3.amazonaws.com/ava-dataset/test/E-fqjlYMFhE.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.192.192, 16.182.72.0, 16.182.71.72, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.192.192]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:47 ERROR 404: Not Found.
+
+--2024-07-03 12:56:47--  https://s3.amazonaws.com/ava-dataset/test/EHMP5-9KUdI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.179.13, 52.217.0.158, 52.216.218.168, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.179.13]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:48 ERROR 404: Not Found.
+
+--2024-07-03 12:56:48--  https://s3.amazonaws.com/ava-dataset/test/EO1gLAoEZRA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.254.56, 52.216.42.48, 52.216.137.174, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.254.56]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:49 ERROR 404: Not Found.
+
+--2024-07-03 12:56:49--  https://s3.amazonaws.com/ava-dataset/test/FONjBIXaM-0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.137.174, 52.217.172.32, 52.217.254.56, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.137.174]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:49 ERROR 404: Not Found.
+
+--2024-07-03 12:56:49--  https://s3.amazonaws.com/ava-dataset/test/G0gDuIVKiXg.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.245.62, 52.217.172.32, 52.217.197.240, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.245.62]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:50--  https://s3.amazonaws.com/ava-dataset/test/GElolK2jG50.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.197.240, 52.216.137.174, 52.217.254.56, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.197.240]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:50--  https://s3.amazonaws.com/ava-dataset/test/GQxKfbvL3mg.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.16.42, 3.5.24.238, 52.216.218.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.16.42]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:51--  https://s3.amazonaws.com/ava-dataset/test/Gsm_ZBStr0s.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.24.238, 54.231.227.160, 54.231.236.24, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.24.238]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:51 ERROR 404: Not Found.
+
+--2024-07-03 12:56:51--  https://s3.amazonaws.com/ava-dataset/test/HPd4eMvs1Kg.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.16.42, 52.217.18.22, 52.216.218.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.16.42]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:52 ERROR 404: Not Found.
+
+--2024-07-03 12:56:52--  https://s3.amazonaws.com/ava-dataset/test/HeKz7BELAQc.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.196.200, 54.231.227.160, 3.5.24.238, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.196.200]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:52--  https://s3.amazonaws.com/ava-dataset/test/HtXWX0LnifY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.227.160, 3.5.16.42, 52.217.18.22, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.227.160]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:53 ERROR 404: Not Found.
+
+--2024-07-03 12:56:53--  https://s3.amazonaws.com/ava-dataset/test/IC5M1EhJNfI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.227.160, 3.5.16.42, 52.217.18.22, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.227.160]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:53 ERROR 404: Not Found.
+
+--2024-07-03 12:56:53--  https://s3.amazonaws.com/ava-dataset/test/IIyYHprTP58.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.23.194, 52.216.37.248, 52.216.162.197, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.23.194]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:54 ERROR 404: Not Found.
+
+--2024-07-03 12:56:54--  https://s3.amazonaws.com/ava-dataset/test/Ic0LMbDyc9Y.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.162.197, 52.216.37.248, 52.217.235.248, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.162.197]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:55--  https://s3.amazonaws.com/ava-dataset/test/JiBiCiK9HjY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.121.152, 52.217.200.224, 3.5.23.194, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.121.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:55 ERROR 404: Not Found.
+
+--2024-07-03 12:56:55--  https://s3.amazonaws.com/ava-dataset/test/K-tICG1ek-E.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.37.248, 52.217.235.248, 52.216.214.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.37.248]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:56 ERROR 404: Not Found.
+
+--2024-07-03 12:56:56--  https://s3.amazonaws.com/ava-dataset/test/Ke8b1_yiUVQ.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.200.224, 52.217.235.248, 52.217.121.152, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.200.224]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:56--  https://s3.amazonaws.com/ava-dataset/test/KkAf75yOKqs.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.162.197, 52.216.214.216, 52.216.145.109, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.162.197]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:57--  https://s3.amazonaws.com/ava-dataset/test/KrMSZUQJlNM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.121.152, 52.216.37.248, 52.216.214.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.121.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:57--  https://s3.amazonaws.com/ava-dataset/test/LO964EmiVfo.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.37.248, 52.217.235.248, 52.216.214.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.37.248]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:58--  https://s3.amazonaws.com/ava-dataset/test/Mz0FKktvMLY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.160.248, 3.5.22.186, 54.231.196.208, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.160.248]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:56:58--  https://s3.amazonaws.com/ava-dataset/test/NUwem2aZa0Y.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.126.144, 52.217.138.64, 54.231.196.208, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.126.144]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:59 ERROR 404: Not Found.
+
+--2024-07-03 12:56:59--  https://s3.amazonaws.com/ava-dataset/test/O5y8zKl9X2E.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.138.64, 52.217.198.168, 52.217.160.248, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.138.64]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:56:59 ERROR 404: Not Found.
+
+--2024-07-03 12:56:59--  https://s3.amazonaws.com/ava-dataset/test/O8xkUcUJPNo.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.177.205, 3.5.12.42, 52.217.198.168, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.177.205]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:00--  https://s3.amazonaws.com/ava-dataset/test/OEUMcSba9t0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.198.168, 52.217.160.248, 3.5.22.186, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.198.168]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:00 ERROR 404: Not Found.
+
+--2024-07-03 12:57:00--  https://s3.amazonaws.com/ava-dataset/test/OL_Wwo5W1Zs.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.35.248, 52.216.165.229, 16.182.106.56, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.35.248]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:01 ERROR 404: Not Found.
+
+--2024-07-03 12:57:01--  https://s3.amazonaws.com/ava-dataset/test/OQxN4ksema0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.62.160, 52.216.44.112, 52.216.9.117, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.62.160]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:01--  https://s3.amazonaws.com/ava-dataset/test/P5EhajqkqPw.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.62.160, 52.217.17.238, 52.216.9.117, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.62.160]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:02--  https://s3.amazonaws.com/ava-dataset/test/QTf_v67C5KI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.191.48, 52.217.94.206, 52.216.170.253, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.191.48]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:02 ERROR 404: Not Found.
+
+--2024-07-03 12:57:02--  https://s3.amazonaws.com/ava-dataset/test/Qes4a8HuyEc.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.44.112, 52.217.236.144, 52.216.44.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.44.112]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:03--  https://s3.amazonaws.com/ava-dataset/test/RCNuAys0Hsg.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.236.144, 52.217.94.206, 52.216.170.253, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.236.144]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:03--  https://s3.amazonaws.com/ava-dataset/test/RW-H3fN_79I.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.44.104, 52.217.94.206, 52.217.191.48, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.44.104]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:04 ERROR 404: Not Found.
+
+--2024-07-03 12:57:04--  https://s3.amazonaws.com/ava-dataset/test/Scg5LeZszCc.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.44.112, 52.216.44.104, 52.216.165.45, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.44.112]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:04--  https://s3.amazonaws.com/ava-dataset/test/Sntyb4omSfU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.191.48, 52.216.44.104, 52.217.94.206, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.191.48]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:05--  https://s3.amazonaws.com/ava-dataset/test/SoNhz0WJZsI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.191.48, 52.216.44.104, 52.217.94.206, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.191.48]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:05--  https://s3.amazonaws.com/ava-dataset/test/Uw7387tc9PU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.165.45, 52.216.128.165, 52.216.44.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.165.45]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:06 ERROR 404: Not Found.
+
+--2024-07-03 12:57:06--  https://s3.amazonaws.com/ava-dataset/test/V6RX59GT-3k.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.236.144, 52.216.44.104, 52.216.128.165, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.236.144]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:06--  https://s3.amazonaws.com/ava-dataset/test/VNZ8JDb8sks.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.44.104, 52.217.236.144, 52.216.44.112, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.44.104]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:07--  https://s3.amazonaws.com/ava-dataset/test/ViY7CR2TSO8.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.26.14, 54.231.203.88, 52.216.56.8, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.26.14]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:08--  https://s3.amazonaws.com/ava-dataset/test/W8TFzEy0gp0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.140.64, 52.217.202.80, 54.231.226.88, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.140.64]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:08--  https://s3.amazonaws.com/ava-dataset/test/WMFTBgYWJS8.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.12.229, 54.231.163.136, 52.217.81.70, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.12.229]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:09--  https://s3.amazonaws.com/ava-dataset/test/Wgytpy6TeUA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.12.229, 52.217.81.70, 52.216.41.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.12.229]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:09 ERROR 404: Not Found.
+
+--2024-07-03 12:57:09--  https://s3.amazonaws.com/ava-dataset/test/WhkON_S-pQc.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.14.231, 3.5.12.229, 52.216.41.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.14.231]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:10 ERROR 404: Not Found.
+
+--2024-07-03 12:57:10--  https://s3.amazonaws.com/ava-dataset/test/XOe9GeojzCs.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.14.231, 52.217.81.70, 54.231.226.112, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.14.231]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:10 ERROR 404: Not Found.
+
+--2024-07-03 12:57:10--  https://s3.amazonaws.com/ava-dataset/test/YAAUPjq-L-Q.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.81.70, 3.5.12.229, 16.182.33.248, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.81.70]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:11 ERROR 404: Not Found.
+
+--2024-07-03 12:57:11--  https://s3.amazonaws.com/ava-dataset/test/Z0FEElATNjk.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.163.136, 16.182.33.248, 3.5.12.229, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.163.136]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:11--  https://s3.amazonaws.com/ava-dataset/test/Z42lnoj2n08.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.81.70, 52.216.41.104, 16.182.33.248, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.81.70]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:12--  https://s3.amazonaws.com/ava-dataset/test/ZS2C28fDC9U.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.163.136, 52.217.11.38, 52.217.81.70, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.163.136]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:13 ERROR 404: Not Found.
+
+--2024-07-03 12:57:13--  https://s3.amazonaws.com/ava-dataset/test/ZbeMNLwASVo.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.12.229, 54.231.226.112, 52.216.41.104, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.12.229]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:13--  https://s3.amazonaws.com/ava-dataset/test/ZsgPK0XGYoM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.81.70, 52.217.11.38, 3.5.14.231, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.81.70]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:14 ERROR 404: Not Found.
+
+--2024-07-03 12:57:14--  https://s3.amazonaws.com/ava-dataset/test/Zu4iQJrlpo0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.195.104, 52.217.113.112, 52.216.133.61, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.195.104]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:14--  https://s3.amazonaws.com/ava-dataset/test/_kbrVsCaaPo.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.22.245, 52.217.119.16, 52.217.226.72, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.22.245]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:15 ERROR 404: Not Found.
+
+--2024-07-03 12:57:15--  https://s3.amazonaws.com/ava-dataset/test/_vy57h5Oeys.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.121.248, 52.216.214.88, 52.216.32.112, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.121.248]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:15--  https://s3.amazonaws.com/ava-dataset/test/aDfOtlsdoWw.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.147.118, 52.216.32.112, 52.217.121.248, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.147.118]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:16--  https://s3.amazonaws.com/ava-dataset/test/bNP8Q_8u89A.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 16.182.37.184, 52.217.160.80, 52.216.42.240, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[16.182.37.184]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:16 ERROR 404: Not Found.
+
+--2024-07-03 12:57:16--  https://s3.amazonaws.com/ava-dataset/test/bUVls-bf0jM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.244.6, 52.216.42.240, 54.231.128.16, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.244.6]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:17--  https://s3.amazonaws.com/ava-dataset/test/bzGQK5lH-RA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.16.5, 54.231.163.152, 54.231.168.56, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.16.5]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:17--  https://s3.amazonaws.com/ava-dataset/test/c5mlhcFYYZs.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.168.56, 52.216.222.184, 52.217.82.174, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.168.56]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:18 ERROR 404: Not Found.
+
+--2024-07-03 12:57:18--  https://s3.amazonaws.com/ava-dataset/test/cYt6NaQgcEk.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 16.182.100.16, 54.231.232.248, 52.217.140.136, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[16.182.100.16]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:19 ERROR 404: Not Found.
+
+--2024-07-03 12:57:19--  https://s3.amazonaws.com/ava-dataset/test/cqkChR44vkA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.117.120, 54.231.228.40, 54.231.203.192, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.117.120]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:19--  https://s3.amazonaws.com/ava-dataset/test/fT_WjgJ_-r0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.228.40, 52.217.117.120, 52.217.117.128, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.228.40]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:20--  https://s3.amazonaws.com/ava-dataset/test/gEI9qBdVt5I.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.194.24, 52.217.117.120, 52.217.140.136, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.194.24]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:20 ERROR 404: Not Found.
+
+--2024-07-03 12:57:20--  https://s3.amazonaws.com/ava-dataset/test/h7Atb503JwY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.203.192, 54.231.228.40, 52.217.117.120, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.203.192]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:21 ERROR 404: Not Found.
+
+--2024-07-03 12:57:21--  https://s3.amazonaws.com/ava-dataset/test/hgmK4Epb02E.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.117.120, 52.217.117.128, 16.182.100.16, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.117.120]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:21--  https://s3.amazonaws.com/ava-dataset/test/i9cuy3teV0w.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.232.248, 54.231.194.24, 54.231.203.192, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.232.248]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:22--  https://s3.amazonaws.com/ava-dataset/test/ipBRBABLSAk.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 16.182.100.16, 54.231.203.192, 54.231.228.40, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[16.182.100.16]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:22--  https://s3.amazonaws.com/ava-dataset/test/jKKXDh4lYd0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.195.144, 52.217.236.8, 54.231.200.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.195.144]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:22--  https://s3.amazonaws.com/ava-dataset/test/kW5WyJ1QNpM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.236.8, 52.217.112.40, 52.217.98.198, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.236.8]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:23--  https://s3.amazonaws.com/ava-dataset/test/keUOiCcHtoQ.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.200.216, 52.217.112.40, 52.216.95.149, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.200.216]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:23--  https://s3.amazonaws.com/ava-dataset/test/kvFlbTK812w.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.200.216, 52.217.141.200, 52.217.112.40, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.200.216]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:24--  https://s3.amazonaws.com/ava-dataset/test/l8_Mk3-sZsQ.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.112.40, 52.217.141.200, 52.217.32.70, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.112.40]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:24--  https://s3.amazonaws.com/ava-dataset/test/nAg_NVzLoAY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.236.8, 52.217.195.144, 52.217.98.198, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.236.8]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:25--  https://s3.amazonaws.com/ava-dataset/test/nRzhjXMIXt4.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.95.149, 52.217.236.8, 52.217.32.70, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.95.149]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:25--  https://s3.amazonaws.com/ava-dataset/test/o-ZcbjLBtls.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.208.32, 52.216.139.205, 16.182.70.240, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.208.32]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:26--  https://s3.amazonaws.com/ava-dataset/test/ohn_RxyaCy4.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.135.8, 16.182.70.240, 52.217.49.6, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.135.8]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:26 ERROR 404: Not Found.
+
+--2024-07-03 12:57:26--  https://s3.amazonaws.com/ava-dataset/test/pSE4Dlork1Y.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.139.205, 52.217.230.152, 52.217.49.6, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.139.205]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:27 ERROR 404: Not Found.
+
+--2024-07-03 12:57:27--  https://s3.amazonaws.com/ava-dataset/test/pSdPmmJ3-ng.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.230.152, 52.216.44.72, 52.217.135.8, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.230.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:27 ERROR 404: Not Found.
+
+--2024-07-03 12:57:27--  https://s3.amazonaws.com/ava-dataset/test/rJibAAUEMDY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 16.182.70.240, 52.217.135.8, 52.217.49.6, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[16.182.70.240]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:28--  https://s3.amazonaws.com/ava-dataset/test/rRL0Ce8e-RY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.139.205, 52.216.208.32, 52.216.206.109, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.139.205]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:28--  https://s3.amazonaws.com/ava-dataset/test/rTCch_5JlkA.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.230.152, 16.182.70.240, 52.216.44.72, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.230.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:29 ERROR 404: Not Found.
+
+--2024-07-03 12:57:29--  https://s3.amazonaws.com/ava-dataset/test/s2z5UASlrP8.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.24.213, 52.216.219.0, 52.216.222.112, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.24.213]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:30--  https://s3.amazonaws.com/ava-dataset/test/sV3zZROy0uc.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.24.213, 52.216.222.112, 52.216.212.248, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.24.213]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:30--  https://s3.amazonaws.com/ava-dataset/test/tDF-BqFfF78.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.222.112, 3.5.24.213, 52.217.198.120, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.222.112]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:31--  https://s3.amazonaws.com/ava-dataset/test/tj-VmrMYtUI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.202.40, 3.5.24.213, 52.216.95.29, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.202.40]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:31 ERROR 404: Not Found.
+
+--2024-07-03 12:57:31--  https://s3.amazonaws.com/ava-dataset/test/u97DLHpcw7c.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.228.184, 52.217.123.16, 3.5.12.189, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.228.184]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:32--  https://s3.amazonaws.com/ava-dataset/test/vL7N_xRJKJU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.132.136, 52.217.123.16, 52.216.95.173, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.132.136]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:32 ERROR 404: Not Found.
+
+--2024-07-03 12:57:32--  https://s3.amazonaws.com/ava-dataset/test/vsMgg4snZzM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.95.173, 52.216.40.216, 52.217.132.136, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.95.173]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:33--  https://s3.amazonaws.com/ava-dataset/test/w-jIrlwuv2Y.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.123.16, 52.216.40.216, 52.216.95.173, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.123.16]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:33--  https://s3.amazonaws.com/ava-dataset/test/wamBSoyRtbs.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.228.184, 16.182.36.80, 54.231.172.40, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.228.184]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:34--  https://s3.amazonaws.com/ava-dataset/test/woC9Vfbn74I.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.172.40, 16.182.36.80, 52.216.40.216, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.172.40]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:34--  https://s3.amazonaws.com/ava-dataset/test/xH1WLtZ8csM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.141.152, 52.216.241.126, 52.216.41.128, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.141.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:35 ERROR 404: Not Found.
+
+--2024-07-03 12:57:35--  https://s3.amazonaws.com/ava-dataset/test/xJpDPrwLJh4.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.138.200, 52.216.137.46, 54.231.172.192, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.138.200]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:35--  https://s3.amazonaws.com/ava-dataset/test/xT2ogY6xEsI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.141.152, 52.217.138.200, 54.231.172.192, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.141.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:36 ERROR 404: Not Found.
+
+--2024-07-03 12:57:36--  https://s3.amazonaws.com/ava-dataset/test/xYUx0drhUNk.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.41.128, 52.217.138.200, 52.216.241.126, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.41.128]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:36--  https://s3.amazonaws.com/ava-dataset/test/xauSNGP5yA0.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.50.0, 52.217.169.16, 52.217.233.120, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.50.0]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:37--  https://s3.amazonaws.com/ava-dataset/test/xdDTWBRWPLQ.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.204.168, 52.216.48.40, 52.217.120.64, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.204.168]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:37--  https://s3.amazonaws.com/ava-dataset/test/y4lBI_gFnqI.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.224.24, 52.216.48.40, 52.216.50.0, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.224.24]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:38--  https://s3.amazonaws.com/ava-dataset/test/y5o8w0FRj98.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.229.184, 52.216.48.40, 52.217.120.64, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.229.184]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:38--  https://s3.amazonaws.com/ava-dataset/test/yQdi5Ke4dNY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.233.120, 52.217.169.16, 52.217.120.64, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.233.120]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:39--  https://s3.amazonaws.com/ava-dataset/test/yRRZkwtJCwU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.169.16, 52.217.229.184, 52.217.224.24, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.169.16]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:39--  https://s3.amazonaws.com/ava-dataset/test/z5lg_3abT-s.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.80.182, 16.182.108.136, 54.231.224.72, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.80.182]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:40--  https://s3.amazonaws.com/ava-dataset/test/zm78XnWN7MU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.0.81, 16.182.108.136, 52.216.218.48, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.0.81]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 12:57:40--  https://s3.amazonaws.com/ava-dataset/test/zvxnOrzTg0M.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.224.72, 16.182.108.136, 54.231.160.8, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.224.72]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 12:57:41 ERROR 404: Not Found.
+
+Downloading finished.
+--2024-07-03 20:34:15--  https://s3.amazonaws.com/ava-dataset/test/--205wugM18.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.20.81, 54.231.198.152, 52.217.206.176, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.20.81]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:16--  https://s3.amazonaws.com/ava-dataset/test/-APF0-L14kw.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.20.81, 52.216.50.88, 16.182.106.192, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.20.81]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:16--  https://s3.amazonaws.com/ava-dataset/test/-FLn0aeA6EU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.198.152, 52.217.80.118, 3.5.24.152, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.198.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:17--  https://s3.amazonaws.com/ava-dataset/test/0OLtK6SeTwo.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 3.5.24.152, 3.5.20.81, 54.231.198.152, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[3.5.24.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 20:34:17 ERROR 404: Not Found.
+
+--2024-07-03 20:34:17--  https://s3.amazonaws.com/ava-dataset/test/1R7n8B8KkZE.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 54.231.134.176, 52.216.37.184, 52.216.49.232, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[54.231.134.176]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:18--  https://s3.amazonaws.com/ava-dataset/test/1XZZnWMP4CU.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.217.121.216, 52.216.51.208, 52.216.179.101, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.217.121.216]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:18--  https://s3.amazonaws.com/ava-dataset/test/2eTGj8zPykM.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.37.184, 52.216.220.152, 52.216.51.208, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.37.184]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:19--  https://s3.amazonaws.com/ava-dataset/test/3-ivkPTSTSw.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.37.184, 52.216.49.232, 52.216.138.69, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.37.184]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 404 Not Found
+2024-07-03 20:34:19 ERROR 404: Not Found.
+
+--2024-07-03 20:34:19--  https://s3.amazonaws.com/ava-dataset/test/30Qkf0pq-PY.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.220.152, 52.217.121.216, 52.216.138.69, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.220.152]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 416 Requested Range Not Satisfiable
+
+    El archivo ya se ha obtenido por completo; no hay nada que hacer.
+
+--2024-07-03 20:34:20--  https://s3.amazonaws.com/ava-dataset/test/55R6Ng9w65o.mkv
+Resolviendo s3.amazonaws.com (s3.amazonaws.com)... 52.216.49.232, 54.231.134.176, 52.216.37.184, ...
+Conectando con s3.amazonaws.com (s3.amazonaws.com)[52.216.49.232]:443... 
