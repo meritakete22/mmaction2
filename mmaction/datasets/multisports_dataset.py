@@ -113,6 +113,7 @@ class MultiSportsDataset(BaseDataset):
                  timestamp_start=1):
         # since it inherits from `BaseDataset`, some arguments
         # should be assigned before performing `load_annotations()`
+        log
         self.custom_classes = custom_classes
         if custom_classes is not None:
             assert num_classes == len(custom_classes) + 1

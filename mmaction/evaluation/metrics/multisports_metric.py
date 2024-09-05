@@ -44,7 +44,7 @@ class MultiSportsMetric(BaseMetric):
         logger = MMLogger.get_current_instance()
         for pred in data_samples:
             video_key = pred['video_id'].split('.mp4')[0]
-            logger.info(f"Processing {video_key}")
+            # logger.info(f"Processing {video_key}")
             frm_num = pred['timestamp']
             bboxes = pred['pred_instances']['bboxes'].cpu().numpy()
             cls_scores = pred['pred_instances']['scores'].cpu().numpy()

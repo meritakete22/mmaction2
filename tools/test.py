@@ -55,6 +55,8 @@ def parse_args():
         help='job launcher')
     parser.add_argument('--local_rank', '--local-rank', type=int, default=0)
     parser.add_argument('--ann-file-val', help='File with the csv of validation')
+    parser.add_argument('--action-thr', type=float, help='Action threshold')
+    parser.add_argument('--person-thr', type=float, help='Person threshold')
     args = parser.parse_args()
     if 'LOCAL_RANK' not in os.environ:
         os.environ['LOCAL_RANK'] = str(args.local_rank)
@@ -115,6 +117,16 @@ def main():
         cfg.test_dataloader.dataset.ann_file = args.ann_file_val
 
     cfg.load_from = args.checkpoint
+
+    # Update action_thr for evaluator
+    if isinstance(cfg.test_evaluator, list) and len(cfg.test_evaluator) > 0:
+        cfg.test_evaluator[0]['action_thr'] = float(args.action_thr)
+    elif isinstance(cfg.test_evaluator, dict):
+        cfg.test_evaluator['action_thr'] = float(args.action_thr)
+
+    # Update person_det_score_thr for dataset
+    if args.person_thr is not None:
+        cfg.test_dataloader.dataset.person_det_score_thr = float(args.person_thr)
     
     # build the runner from config
     if 'runner_type' not in cfg:

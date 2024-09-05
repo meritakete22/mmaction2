@@ -15,7 +15,7 @@
 # limitations under the License.
 ##############################################################################
 
-# Cut each video from its 15th to 2th minute.
+# Cut each video from its 15th to 16th minute.
 
 IN_DATA_DIR="../../../data/ava/videos"
 OUT_DATA_DIR="../../../data/ava/videos_1min"

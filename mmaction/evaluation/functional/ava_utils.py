@@ -265,36 +265,50 @@ def ava_eval(result_file,
         precision, recall = metrics.compute_precision_recall(
             scores[k], tpfps[k], gt_count[k])
         ap = metrics.compute_average_precision(precision, recall)
+        f1score = metrics.compute_f1_score(precision, recall)
+        mean_precision = metrics.calculate_mean(precision)
+        mean_recall = metrics.calculate_mean(recall)
+
         class_name = [x['name'] for x in categories if x['id'] == k]
         assert len(class_name) == 1
         class_name = class_name[0]
-        cls_AP.append((k, class_name, ap))
+        cls_AP.append((k, class_name, ap, mean_precision, mean_recall , f1score))
     if verbose:
         print_time('Run Evaluator', start)
 
     print('Per-class results: ', flush=True)
-    for k, class_name, ap in cls_AP:
-        print(f'Index: {k}, Action: {class_name}: AP: {ap:.4f};', flush=True)
+    for k, class_name , ap, precision, recall, f1score in cls_AP:
+        print(f'Index: {k}, Action: {class_name}: Prec: {precision}, Rec: {recall}, AP: {ap:.4f}, F1score: {f1score:} ;', flush=True)
 
     overall = np.nanmean([x[2] for x in cls_AP])
     person_movement = np.nanmean([x[2] for x in cls_AP if x[0] <= 14])
     object_manipulation = np.nanmean([x[2] for x in cls_AP if 14 < x[0] < 64])
     person_interaction = np.nanmean([x[2] for x in cls_AP if 64 <= x[0]])
 
+    overall_pred = np.nanmean([x[3] for x in cls_AP])
+    overall_recall = np.nanmean([x[4] for x in cls_AP])
+    overall_f1score = np.nanmean([x[5] for x in cls_AP])
+
     print('Overall Results: ', flush=True)
     print(f'Overall mAP: {overall:.4f}', flush=True)
+    print(f'Overall Precision: {overall_pred:.4f}', flush=True)
+    print(f'Overall Recall: {overall_recall:.4f}', flush=True)
     print(f'Person Movement mAP: {person_movement:.4f}', flush=True)
     print(f'Object Manipulation mAP: {object_manipulation:.4f}', flush=True)
     print(f'Person Interaction mAP: {person_interaction:.4f}', flush=True)
+    print(f'Overall F1score: {overall_f1score:.4f}', flush=True)
 
     results = {}
     results['overall'] = overall
+    results['overall_precision'] = overall_pred
+    results['overall_recall'] = overall_recall
     results['person_movement'] = person_movement
     results['object_manipulation'] = object_manipulation
     results['person_interaction'] = person_interaction
+    results['overall_f1score'] = overall_f1score
 
     if verbose:
-        for k, class_name, ap in cls_AP:
-            print(f'Class {class_name} AP: {ap:.4f}', flush=True)
+        for k, class_name, ap, precision, recall, f1score in cls_AP:
+            print(f'Class {class_name} Prec: {precision}, Rec: {recall}, AP: {ap:.4f}, F1score: {f1score}', flush=True)
 
     return results

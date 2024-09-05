@@ -5,6 +5,7 @@ import os.path as osp
 
 from mmengine.config import Config, DictAction
 from mmengine.runner import Runner
+import torch
 
 from mmaction.registry import RUNNERS
 

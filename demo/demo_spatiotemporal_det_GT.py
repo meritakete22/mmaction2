@@ -4,11 +4,14 @@ import copy as cp
 import pickle
 import tempfile
 
+import os
 import cv2
 import mmcv
 import mmengine
 import numpy as np
 import torch
+import pandas as pd
+
 from mmengine import DictAction
 from mmengine.runner import load_checkpoint
 from mmengine.structures import InstanceData
@@ -42,7 +45,8 @@ plate_blue = [hex2color(h) for h in plate_blue]
 plate_green = '004b23-006400-007200-008000-38b000-70e000'
 plate_green = plate_green.split('-')
 plate_green = [hex2color(h) for h in plate_green]
-plate_red = 'c30010-d1001f-de0a26-f01e2c-ff2c2c-f9449'
+# plate_red = 'c61a09-df2c14-ed3419-fb3b1e-ff4122-ff6242'
+plate_red = 'ff0000-ee0000-dd0000-cc0000-bb0000-aa0000' 
 plate_red = plate_red.split('-')
 plate_red = [hex2color(h) for h in plate_red]
 
@@ -65,43 +69,52 @@ def iou(boxA, boxB):
     # Return the intersection over union value
     return iou
 
-def compare_predictions_with_gt(pred_box, pred_labels, gt_tubes, gt_labels, frame_number):
-    # print("Frame: ", frame_number)
-    # print("Pred labels: ", pred_labels)
+def compare_predictions_with_gt(pred_box, pred_labels, frame_number, score ,gt_row, label_map, frame_start, scale_ratio):
+
+    frame = frame_start + frame_number
+    # print("Frame: ", frame)
+    # print("Pred labels: ", pred_labels[:5])
     # print("Pred box: ", pred_box)
+    # print("Score: ", score[:5])
 
-    # labels_gt = []
-    # for label, tubes in gt_tubes.items():
-    #     labels_gt.append(gt_labels[label])
-    # print("Labels gt: ", labels_gt)
+    frame_rows = gt_row[gt_row['middle_frame_timestamp'] == frame]
 
-    #Almacenar las cajas de GT
-    gt_boxes = []
-    for label, tubes in gt_tubes.items():
-        for tube in tubes:
-            for frame_info in tube:
-                if frame_info[0] == frame_number:
-                    gt_box = frame_info[1:]
-                    gt_boxes.append((gt_labels[label], gt_box))
+    if frame_rows.empty:
+        print("No hay datos de GT para este frame.")
+        return -2
+    else:
+        # Listas para almacenar las bbox y action_id de las filas coincidentes
+        gt_boxes = []
 
-    # print("GT boxes: ", gt_boxes)
-    # input("")
-    
-    # Verificar si alguna caja GT coincide con la predicción
-    for gt_label, gt_box in gt_boxes:
-        iou_score = iou(pred_box, gt_box)
-        # print("IOU: ", iou_score)
-        if iou_score >= 0.3:
-            # print("Predicción: ", pred_labels)
-            # print("GT: ", gt_label)
-            # input("")
-            if gt_label in pred_labels:
-                print("Correcto")
-                return True
-    
-    return False
+        # Iterar sobre las filas que coinciden
+        for index, row in frame_rows.iterrows():
+            # Extraer los datos de la fila
+            gt_x1, gt_y1, gt_x2, gt_y2 = row['x1'], row['y1'], row['x2'], row['y2']
+            gt_box = [gt_x1, gt_y1, gt_x2, gt_y2]
+            gt_box = [int(x * scale_ratio[i % 2]) for i, x in enumerate(gt_box)]
+            print("GT box: ", gt_box)
+            gt_action_id = row['action_id']
 
-def visualize(frames, annotations, gt_tubes, gt_labels ,plate=plate_blue, max_num=5):
+            gt_label = label_map[gt_action_id]
+
+            # Añade a la lista de cajas GT la acción y la caja
+            gt_boxes.append((gt_label, gt_box))
+
+        # Verificar si alguna caja GT coincide con la predicción
+        for gt_label, gt_box in gt_boxes:
+            iou_score = iou(pred_box, gt_box)
+            print("IOU: ", iou_score)
+            if iou_score >= 0.3:
+                for idx, pred_label in enumerate(pred_labels[:5]):
+                    if pred_label == gt_label:
+                        print("Correcto: Índice de la etiqueta predicha:", idx)
+                        return idx  # Devuelve el índice de la etiqueta correcta
+
+    # Si no se encuentra ninguna coincidencia
+    print("No coincidencias encontradas.")
+    return -1
+
+def visualize(frames, annotations, gt_row, label_map ,frame_start ,plate=plate_blue, max_num=5):
     """Visualize frames with predicted annotations.
 
     Args:
@@ -123,6 +136,7 @@ def visualize(frames, annotations, gt_tubes, gt_labels ,plate=plate_blue, max_nu
     anno = None
     h, w, _ = frames[0].shape
     scale_ratio = np.array([w, h, w, h])
+    # print("Scale ratio: ", scale_ratio)
 
     for i in range(na):
         anno = annotations[i]
@@ -134,42 +148,67 @@ def visualize(frames, annotations, gt_tubes, gt_labels ,plate=plate_blue, max_nu
             frame_number = ind
             for ann in anno:
                 box = ann[0]
-                label = [lb.replace('_', ' ') for lb in ann[1]]
-                if not len(label):
+                labels = ann[1]
+                if not len(labels):
                     continue
                 score = ann[2]
                 box = (box * scale_ratio).astype(np.int64)
                 st, ed = tuple(box[:2]), tuple(box[2:])             
                 # Comparar con las anotaciones GT
-                correct = compare_predictions_with_gt(box, label, gt_tubes, gt_labels, frame_number)
-                plate = plate_green if correct else plate_red
-                plate = [x[::-1] for x in plate]
+                label_id = compare_predictions_with_gt(box, labels, frame_number, score, gt_row, label_map, frame_start, scale_ratio)
 
-                cv2.rectangle(frame, st, ed, plate[0], 2)
+                # Definir el color del plate basado en el resultado de la comparación
+                if label_id == -2:
+                    current_plate = plate[:]  # Mantiene el array de colores original si no hay datos de GT
+                elif label_id == -1:
+                    current_plate = plate_red[:]  # Cambia a rojo si no se predice correctamente
+                else:
+                    current_plate = plate[:]  # Mantiene el array de colores original
+                    # current_plate = [plate_green[0]] + plate_red[1:]  # Cambia solo la primera etiqueta a verde
+                current_plate = [x[::-1] for x in current_plate]  # Invertir los colores BGR->RGB
 
-                for k, lb in enumerate(label):
+                # Dibujar la caja con el color seleccionado
+                cv2.rectangle(frame, st, ed, current_plate[0], 2)
+
+                for k, lb in enumerate(labels):
                     if k >= max_num:
                         break
                     text = abbrev(lb)
                     text = ': '.join([text, f'{score[k]:>.2f}'])
                     location = (0 + st[0], 18 + k * 18 + st[1])
-                    textsize = cv2.getTextSize(text, FONTFACE, FONTSCALE,
-                                               THICKNESS)[0]
+                    textsize = cv2.getTextSize(text, FONTFACE, FONTSCALE, THICKNESS)[0]
                     textwidth = textsize[0]
                     diag0 = (location[0] + textwidth, location[1] - 14)
                     diag1 = (location[0], location[1] + 2)
-                    cv2.rectangle(frame, diag0, diag1, plate[k + 1], -1)
-                    cv2.putText(frame, text, location, FONTFACE, FONTSCALE,
-                                FONTCOLOR, THICKNESS, LINETYPE)
+                    if(label_id == k):
+                        cv2.rectangle(frame, diag0, diag1, plate_green[k+1], -1)
+                    else:
+                        cv2.rectangle(frame, diag0, diag1, current_plate[k + 1], -1)
+                    cv2.putText(frame, text, location, FONTFACE, FONTSCALE, FONTCOLOR, THICKNESS, LINETYPE)
 
     return frames_out
 
 
+# def load_gt_ann(file_path):
+#     """Load ground truth annotations from a pickle file."""
+#     with open(file_path, 'rb') as f:
+#         gt_annotations = pickle.load(f)
+#     return gt_annotations
+
 def load_gt_ann(file_path):
-    """Load ground truth annotations from a pickle file."""
-    with open(file_path, 'rb') as f:
-        gt_annotations = pickle.load(f)
-    return gt_annotations
+    """Load ground truth annotations from a CSV file."""
+    # Cargar el archivo CSV
+    data = pd.read_csv(file_path, header=None)
+
+    # Asignar nombres a las columnas para una mejor comprensión
+    data.columns = [
+        'video_id',               # Identificador del video de YouTube
+        'middle_frame_timestamp', # Timestamp del cuadro medio en segundos
+        'x1', 'y1', 'x2', 'y2',   # Coordenadas de la caja de la persona (normalizadas)
+        'action_id',              # Identificador de la acción
+        'person_id'               # Identificador único de la persona
+    ]
+    return data
 
 def load_label_map(file_path):
     """Load Label Map.
@@ -287,6 +326,12 @@ def parse_args():
         default=6,
         type=int,
         help='the fps of demo video output')
+    
+    parser.add_argument(
+        '--start-frame',
+        default=0,
+        type=int,
+        help='the frame number where the video starts')
     parser.add_argument(
         '--cfg-options',
         nargs='+',
@@ -317,21 +362,19 @@ def main():
     config = mmengine.Config.fromfile(args.config)
     config.merge_from_dict(args.cfg_options)
     val_pipeline = config.val_pipeline
-    gt_anno = load_gt_ann(config.gt_file)
+    gt_anno = load_gt_ann(config.ann_file_val)
 
     # Sacar el id del video
     video_path_parts = args.video.split('/')
-    sport = video_path_parts[-2]  # Obtiene el nombre del deporte
-    video_name = video_path_parts[-1].split('.')[0]  # Obtiene el nombre del video sin la extensión
+    video_id_with_extension = video_path_parts[-1]  # Obtiene el nombre del video con extensión
 
-    # Formato deseado: "deporte/nombre_del_video"
-    video_id = f"{sport}/{video_name}"
-    # print(gt_anno.keys())
-    # print(gt_anno['gttubes'][video_id])
-    # input("")
-    gt = gt_anno['gttubes'][video_id]
-    gt_labels = gt_anno['labels']        
-
+    # Separar el nombre del video de su extensión
+    video_id, _ = os.path.splitext(video_id_with_extension)
+    frame_start = args.start_frame
+    
+    print(gt_anno.keys())
+    gt_rows = gt_anno[gt_anno['video_id'] == video_id]
+    print(gt_rows)
     # Get the sampler
     sampler = [
         x for x in val_pipeline if get_str_type(x['type']) == 'SampleAVAFrames'
@@ -450,7 +493,7 @@ def main():
         for i in dense_timestamps(timestamps, dense_n)
     ]
     print('Performing visualization')
-    vis_frames = visualize(frames, results, gt, gt_labels)
+    vis_frames = visualize(frames, results, gt_rows, label_map, frame_start)
     vid = mpy.ImageSequenceClip([x[:, :, ::-1] for x in vis_frames],
                                 fps=args.output_fps)
     vid.write_videofile(args.out_filename)

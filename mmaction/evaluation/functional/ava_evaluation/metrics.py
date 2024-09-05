@@ -140,3 +140,51 @@ def compute_cor_loc(num_gt_imgs_per_class,
         return np.where(
             num_gt_imgs_per_class == 0, np.nan,
             num_images_correctly_detected_per_class / num_gt_imgs_per_class)
+    
+
+def compute_f1_score(precision, recall):
+    """Compute F1 Score.
+
+    Args:
+        precision: A float numpy array of precision values.
+        recall: A float numpy array of recall values.
+
+    Returns:
+        f1_score: The F1 score for the given precision and recall.
+    """
+    if precision is None or recall is None:
+        return np.nan
+    
+    precision = np.asarray(precision)
+    recall = np.asarray(recall)
+
+    # Avoid division by zero
+    with np.errstate(divide='ignore', invalid='ignore'):
+        f1_score = 2 * (precision * recall) / (precision + recall)
+    
+    # Replace NaNs with zeros
+    f1_score = np.nan_to_num(f1_score)
+    
+    # Return the mean of the f1 scores
+    return np.nanmean(f1_score)
+
+def calculate_mean(valor):
+    """
+    Calculate the mean, handling NaNs appropriately.
+
+    Args:
+        valor (numpy array or None): The input array.
+
+    Returns:
+        float: The mean of the input array. Returns NaN if the input is empty or None.
+    """
+    # Convert inputs to numpy arrays if they are not already
+    if valor is None:
+        valor = np.array([])
+    else:
+        valor = np.asarray(valor)
+
+    # Calculate mean while ignoring NaNs
+    mean = np.nanmean(valor) if valor.size > 0 else np.nan
+
+    return mean
